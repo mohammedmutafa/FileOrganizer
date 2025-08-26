@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>File Organizer Pro 2025 — Download</title>
+  <title>File Organizer Pro — Download</title>
   <meta name="description" content="Smart file organizer that watches your Downloads, batches images, previews instantly, and shows live stats. Download for Windows or macOS directly from GitHub Releases." />
   <meta name="theme-color" content="#070a10" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,11 +46,11 @@
     .wrap{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
     .brand{display:flex;align-items:center;gap:12px;min-width:0}
 
-    /* Logo (aligned and animated subtly) */
+    /* Logo (uses your app image inside neon frame) */
     .logo{position:relative;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:48px;height:48px;border-radius:14px;background:#0c1220;border:1px solid rgba(255,255,255,.12);box-shadow:0 0 26px var(--glow1), inset 0 0 18px rgba(255,255,255,.06);overflow:hidden}
     .logo::before{content:"";position:absolute;inset:-2px;border-radius:inherit;background:conic-gradient(var(--acc1),var(--acc3),var(--acc2),var(--acc1));filter:blur(.6px);opacity:.35;animation:spin 12s linear infinite}
     .logo::after{content:"";position:absolute;inset:6px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1)}
-    .logo svg{position:relative;z-index:1;width:74%;height:74%;display:block;filter:drop-shadow(0 0 8px rgba(124,89,255,.45))}
+    .logo img{position:relative;z-index:1;width:76%;height:76%;object-fit:contain;filter:drop-shadow(0 0 6px rgba(124,89,255,.3))}
     @keyframes spin{to{transform:rotate(360deg)}}
 
     .name{font-weight:800;letter-spacing:.3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -90,7 +90,7 @@
       border:1px solid rgba(255,255,255,.14);
       background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
       padding:18px;border-radius:16px;color:var(--text);font-weight:800;cursor:pointer;width:100%;min-height:78px;
-      transition:box-shadow .6s ease, background .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); /* slower */
+      transition:box-shadow .6s ease, background .6s ease, transform .6s cubic-bezier(.2,.7,.2,1);
       will-change:transform
     }
     .btn:hover{box-shadow:0 16px 34px rgba(0,0,0,.35),0 0 34px var(--glow1)}
@@ -176,42 +176,29 @@
     <div class="wrap">
       <div class="brand">
         <div class="logo" aria-label="File Organizer Pro logo">
-          <!-- Crisp inline SVG logo -->
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#7c59ff"/>
-                <stop offset="100%" stop-color="#00e5a8"/>
-              </linearGradient>
-            </defs>
-            <rect x="10" y="10" width="44" height="44" rx="10" ry="10" fill="url(#g1)" opacity=".18"/>
-            <path d="M16 24h14l2 3h16v21H16z" fill="#a7b0ff" opacity=".22"/>
-            <path d="M20 28h10l2 3h18v15H20z" fill="#cfe5ff" opacity=".18"/>
-            <path d="M22 36h12v4H22zm0 6h18v4H22z" fill="#cbd3ff" opacity=".8"/>
-          </svg>
+          <img src="assets/icon_cropped_128x128.png" alt="App icon" />
         </div>
-        <div class="name">File Organizer Pro 2025</div>
+        <div class="name">File Organizer Pro</div>
       </div>
       <nav class="links">
         <a href="#download">Download</a>
         <a href="#features">Features</a>
-        <a id="gh-link" href="https://github.com/OWNER_HERE/REPO_HERE" target="_blank" rel="noopener">GitHub</a>
+        <a id="gh-link" href="https://github.com/m0-0-v1" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
 
   <main class="hero" id="download">
     <section>
-      <h1 class="title">Download File Organizer Pro 2025 — Ultra Dark Neon</h1>
+      <h1 class="title">Download File Organizer Pro — Ultra Dark Neon</h1>
       <p class="subtitle">A smart organizer that watches your Downloads, batches images with smart wait, shows instant previews, and tracks live stats.</p>
 
       <div class="card reveal tilt">
         <div class="dl-grid">
-          <!-- Windows button -->
+          <!-- Windows button (static link as requested) -->
           <div class="btn-wrap">
             <span class="badge hidden" id="badge-win">Recommended</span>
-            <a id="btn-win" class="btn win magnet" href="#" download>
-              <!-- Clean Windows icon (4 panes) -->
+            <a id="btn-win" class="btn win magnet" href="https://github.com/mohammedmutafa/FileOrganizer/releases/download/v1.0.0-win/File.Organizer.Pro.2025.Setup.2025.1.0.exe" download data-static="1">
               <svg class="ic ic--win" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M3 3h9v8H3V3zm11 0h7v8h-7V3zM3 13h9v8H3v-8zm11 0h7v8h-7v-8z"/>
               </svg>
@@ -223,11 +210,10 @@
             </a>
           </div>
 
-          <!-- macOS button -->
+          <!-- macOS button (static link as requested) -->
           <div class="btn-wrap">
             <span class="badge hidden" id="badge-mac">Recommended</span>
-            <a id="btn-mac" class="btn mac magnet" href="#" download>
-              <!-- Clean macOS icon (laptop) -->
+            <a id="btn-mac" class="btn mac magnet" href="https://github.com/mohammedmutafa/FileOrganizer/releases/download/v1.0.0/File.Organizer.Pro.2025-2025.1.0-arm64.dmg" download data-static="1">
               <svg class="ic ic--mac" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M3 5h18v11H3V5zm2 2v7h14V7H5zm-3 11h20v2H2v-2z"/>
               </svg>
@@ -282,21 +268,22 @@
   </section>
 
   <footer>
-    <div>© <span id="year"></span> File Organizer Pro 2025</div>
+    <div>© <span id="year"></span> File Organizer Pro</div>
     <div class="links">
-      <a href="https://github.com/OWNER_HERE/REPO_HERE/releases" target="_blank" rel="noopener">Releases</a>
-      <a href="mailto:you@example.com">Support</a>
+      <a href="https://github.com/mohammedmutafa/FileOrganizer/releases" target="_blank" rel="noopener">Releases</a>
+      <a href="https://t.me/mox_v1" target="_blank" rel="noopener">Support</a>
     </div>
   </footer>
 
   <script>
     // ——— Config ———
-    const OWNER = 'OWNER_HERE';
-    const REPO  = 'REPO_HERE';
+    const OWNER = 'mohammedmutafa';
+    const REPO  = 'FileOrganizer';
+    const GH_PROFILE = 'https://github.com/m0-0-v1';
     const API   = `https://api.github.com/repos/${OWNER}/${REPO}/releases/latest`;
 
     // ——— Elements ———
-    document.getElementById('gh-link').href = `https://github.com/${OWNER}/${REPO}`;
+    document.getElementById('gh-link').href = GH_PROFILE;
     document.getElementById('year').textContent = new Date().getFullYear();
     const btnWin = document.getElementById('btn-win');
     const btnMac = document.getElementById('btn-mac');
@@ -332,6 +319,12 @@
 
     // ——— Fetch latest GitHub release ———
     async function loadLatest(){
+      // Static links mode: skip API, keep provided hrefs
+      if (btnWin.dataset.static === '1' || btnMac.dataset.static === '1'){
+        relInfo.textContent = 'Static links active: Windows → v1.0.0-win commits, macOS → v1.0.0 commits';
+        dlCounts.textContent = '';
+        return;
+      }
       try{
         const r = await fetch(API, { headers: { 'Accept':'application/vnd.github+json' }});
         if (!r.ok) throw new Error('API error');
@@ -366,7 +359,7 @@
       }
     }
 
-    // ——— Click feedback: spinner + ripple (slower) ———
+    // ——— Click feedback: spinner + ripple ———
     function setupClickFeedback(a, spinner){
       a.addEventListener('click', (e) => {
         if (spinner){ spinner.classList.remove('hide'); setTimeout(() => spinner.classList.add('hide'), 3500); }
@@ -406,7 +399,7 @@
           const cy = rect.top + rect.height/2;
           const dx = (e.clientX - cx) / (rect.width/2);
           const dy = (e.clientY - cy) / (rect.height/2);
-          el.style.transform = `translate(${dx*4}px, ${dy*4}px)`; // slower & smaller
+          el.style.transform = `translate(${dx*4}px, ${dy*4}px)`;
         });
         el.addEventListener('pointerleave', ()=> el.style.transform = 'translate(0,0)');
       });
